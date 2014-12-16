@@ -13,6 +13,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.ZUOMANE.ViewModels", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.ZUOMANE.Portal", "COM.ZUOMANE.Portal\COM.ZUOMANE.Portal.csproj", "{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{20147954-30EF-4A64-8328-BCC28722AFF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{BA35E8A9-2377-47FF-BED1-C9AE53AA1EE4}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\COM.Excel.dll = Lib\COM.Excel.dll
+		Lib\LTP.Accounts.dll = Lib\LTP.Accounts.dll
+		Lib\LtpPageControl.dll = Lib\LtpPageControl.dll
+		Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll = Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll = Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Lib\Microsoft.Web.UI.WebControls.dll = Lib\Microsoft.Web.UI.WebControls.dll
+		Lib\MySql.Data.dll = Lib\MySql.Data.dll
+		Lib\OpenSmtp.dll = Lib\OpenSmtp.dll
+		Lib\OWC10Chart.dll = Lib\OWC10Chart.dll
+		Lib\System.Data.SQLite.DLL = Lib\System.Data.SQLite.DLL
+		Lib\System.Data.SQLite.lib = Lib\System.Data.SQLite.lib
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
