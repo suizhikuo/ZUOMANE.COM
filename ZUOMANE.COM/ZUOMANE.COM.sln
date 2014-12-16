@@ -3,7 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.ZUOMANE.BLL", "COM.ZUOMANE.BLL\COM.ZUOMANE.BLL.csproj", "{0131622E-65EA-4D79-80A9-B98FF12030B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.ZUOMANE.Common", "COM.ZUOMANE.Common\COM.ZUOMANE.Common.csproj", "{4844A187-6463-47C3-877C-9F3BC9A96388}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.ZUOMANE.Models", "COM.ZUOMANE.Models\COM.ZUOMANE.Models.csproj", "{BAB48412-AE9B-4281-97C0-377ADD5D9A38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.ZUOMANE.ViewModels", "COM.ZUOMANE.ViewModels\COM.ZUOMANE.ViewModels.csproj", "{7E6C6231-DD8C-44E9-9012-39F890013F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.ZUOMANE.Portal", "COM.ZUOMANE.Portal\COM.ZUOMANE.Portal.csproj", "{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0131622E-65EA-4D79-80A9-B98FF12030B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0131622E-65EA-4D79-80A9-B98FF12030B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0131622E-65EA-4D79-80A9-B98FF12030B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0131622E-65EA-4D79-80A9-B98FF12030B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4844A187-6463-47C3-877C-9F3BC9A96388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4844A187-6463-47C3-877C-9F3BC9A96388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4844A187-6463-47C3-877C-9F3BC9A96388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4844A187-6463-47C3-877C-9F3BC9A96388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB48412-AE9B-4281-97C0-377ADD5D9A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAB48412-AE9B-4281-97C0-377ADD5D9A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAB48412-AE9B-4281-97C0-377ADD5D9A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAB48412-AE9B-4281-97C0-377ADD5D9A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6C6231-DD8C-44E9-9012-39F890013F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6C6231-DD8C-44E9-9012-39F890013F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6C6231-DD8C-44E9-9012-39F890013F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6C6231-DD8C-44E9-9012-39F890013F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
