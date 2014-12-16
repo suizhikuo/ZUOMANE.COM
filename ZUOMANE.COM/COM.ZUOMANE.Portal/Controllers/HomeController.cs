@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ASP.NET_MVC5_Bootstrap3_3_1_LESS.Controllers
+namespace COM.ZUOMANE.Portal.Controllers
 {
 	public class HomeController : Controller
 	{

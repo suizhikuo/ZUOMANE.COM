@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
-using ASP.NET_MVC5_Bootstrap3_3_1_LESS.Models;
+using COM.ZUOMANE.Portal.Models;
 
-namespace ASP.NET_MVC5_Bootstrap3_3_1_LESS.Controllers
+namespace COM.ZUOMANE.Portal.Controllers
 {
 	[Authorize]
 	public class AccountController : Controller

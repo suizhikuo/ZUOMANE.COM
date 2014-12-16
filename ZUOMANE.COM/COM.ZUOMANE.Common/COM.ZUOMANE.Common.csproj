@@ -30,8 +30,41 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="COM.Excel">
+      <HintPath>..\Lib\COM.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="LTP.Accounts">
+      <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="LtpPageControl">
+      <HintPath>..\Lib\LtpPageControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\Lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSmtp">
+      <HintPath>..\Lib\OpenSmtp.dll</HintPath>
+    </Reference>
+    <Reference Include="OWC10Chart">
+      <HintPath>..\Lib\OWC10Chart.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\Lib\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,11 +73,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assistant.cs" />
-    <Compile Include="ChartHelper.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="ConfigHelper.cs" />
     <Compile Include="DataCache.cs" />
-    <Compile Include="DataToExcel.cs" />
     <Compile Include="DEncrypt\DEncrypt.cs" />
     <Compile Include="DEncrypt\DESEncrypt.cs" />
     <Compile Include="DEncrypt\HashEncode.cs" />
@@ -53,7 +83,9 @@
     <Compile Include="INIFile.cs" />
     <Compile Include="MailSender.cs" />
     <Compile Include="MessageBox.cs" />
-    <Compile Include="PageBase.cs" />
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="PageValidate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RMB.cs" />
