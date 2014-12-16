@@ -34,6 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{BA35E8A9-237
 		Lib\OWC10Chart.dll = Lib\OWC10Chart.dll
 		Lib\System.Data.SQLite.DLL = Lib\System.Data.SQLite.DLL
 		Lib\System.Data.SQLite.lib = Lib\System.Data.SQLite.lib
+		Lib\System.Web.WebPages.dll = Lib\System.Web.WebPages.dll
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.ZUOMANE.DAL", "COM.ZUOMANE.DAL\COM.ZUOMANE.DAL.csproj", "{754EF61E-E405-4690-ACE2-6E05684D4E7D}"
