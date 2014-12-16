@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 
-namespace Maticsoft.Common
+namespace COM.ZUOMANE.Common
 {
 	/// <summary>
 	/// web.config操作类

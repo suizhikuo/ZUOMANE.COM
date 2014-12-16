@@ -8,7 +8,7 @@ using System.IO;
 using System.Net;
 using System.Net.Mail;
 
-namespace Maticsoft.Common
+namespace COM.ZUOMANE.Common
 {
     public class MailSender
     {

@@ -12,7 +12,7 @@ using System.Web.UI.HtmlControls;
 using System.Reflection;
 using System.Text;
 using LTP.Accounts.Bus;
-namespace Maticsoft.Common
+namespace COM.ZUOMANE.Common
 {
 	/// <summary>
 	/// 页面层(表示层)基类,所有页面继承该页面
@@ -20,7 +20,7 @@ namespace Maticsoft.Common
 	public class PageBase:System.Web.UI.Page
 	{
         public int PermissionID = -1;//默认-1为无限制，可以在不同页面继承里来控制不同页面的权限
-        string virtualPath = Maticsoft.Common.ConfigHelper.GetConfigString("VirtualPath");
+        string virtualPath = COM.ZUOMANE.Common.ConfigHelper.GetConfigString("VirtualPath");
         		
 		/// <summary>
 		/// 构造函数

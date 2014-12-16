@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-namespace Maticsoft.Common
+namespace COM.ZUOMANE.Common
 {
 	/// <summary>
 	/// 显示消息提示对话框。

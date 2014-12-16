@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Maticsoft.Common
+namespace COM.ZUOMANE.Common
 {
     /// <summary> 
     /// Rmb 的摘要说明。 

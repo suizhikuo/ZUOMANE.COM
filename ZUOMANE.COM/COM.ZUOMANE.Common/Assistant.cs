@@ -3,7 +3,7 @@ using System.Configuration;
 using System.Text;
 using System.Data;
 
-namespace Maticsoft.Common
+namespace COM.ZUOMANE.Common
 {
 	/// <summary>
 	/// Assistant 的摘要说明。

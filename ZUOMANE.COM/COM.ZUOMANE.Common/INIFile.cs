@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.IO;
 
-namespace Maticsoft.Common
+namespace COM.ZUOMANE.Common
 {
     /// <summary>
     /// INI文件读写类。

@@ -1,7 +1,7 @@
 ﻿using System; 
 using System.Text; 
 using System.Security.Cryptography; 
-namespace Maticsoft.Common.DEncrypt
+namespace COM.ZUOMANE.Common.DEncrypt
 { 
 	/// <summary> 
 	/// RSA加密解密及RSA签名和验证

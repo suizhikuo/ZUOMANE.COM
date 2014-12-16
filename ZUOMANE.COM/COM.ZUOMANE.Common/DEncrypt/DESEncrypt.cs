@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;  
 using System.Text;
-namespace Maticsoft.Common.DEncrypt
+namespace COM.ZUOMANE.Common.DEncrypt
 {
 	/// <summary>
 	/// DES加密/解密类。

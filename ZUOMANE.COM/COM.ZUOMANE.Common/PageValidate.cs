@@ -4,7 +4,7 @@ using System.Web;
 using System.Web.UI.WebControls;
 using System.Text.RegularExpressions;
 using System.Globalization;
-namespace Maticsoft.Common
+namespace COM.ZUOMANE.Common
 {
 	/// <summary>
 	/// 页面数据校验类
