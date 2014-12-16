@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BAB48412-AE9B-4281-97C0-377ADD5D9A38}</ProjectGuid>
+    <ProjectGuid>{754EF61E-E405-4690-ACE2-6E05684D4E7D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>COM.ZUOMANE</RootNamespace>
-    <AssemblyName>COM.ZUOMANE.Models</AssemblyName>
+    <RootNamespace>COM.ZUOMANE.DAL</RootNamespace>
+    <AssemblyName>COM.ZUOMANE.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.5.3</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,30 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Article.cs" />
-    <Compile Include="Models\ArticleCategory.cs" />
-    <Compile Include="Models\COMZUOMANEDatabaseContext.cs" />
-    <Compile Include="Models\ErrorLog.cs" />
-    <Compile Include="Models\Mapping\ArticleCategoryMap.cs" />
-    <Compile Include="Models\Mapping\ArticleMap.cs" />
-    <Compile Include="Models\Mapping\ErrorLogMap.cs" />
-    <Compile Include="Models\Mapping\sysdiagramMap.cs" />
-    <Compile Include="Models\Mapping\TestMap.cs" />
-    <Compile Include="Models\sysdiagram.cs" />
-    <Compile Include="Models\Test.cs" />
+    <Compile Include="COMZUOMANEDatabaseContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="CodeTemplates\ReverseEngineerCodeFirst\Context.tt" />
-    <Content Include="CodeTemplates\ReverseEngineerCodeFirst\Entity.tt" />
-    <Content Include="CodeTemplates\ReverseEngineerCodeFirst\Mapping.tt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\COM.ZUOMANE.Models\COM.ZUOMANE.Models.csproj">
+      <Project>{bab48412-ae9b-4281-97c0-377add5d9a38}</Project>
+      <Name>COM.ZUOMANE.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

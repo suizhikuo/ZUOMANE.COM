@@ -36,6 +36,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{BA35E8A9-237
 		Lib\System.Data.SQLite.lib = Lib\System.Data.SQLite.lib
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM.ZUOMANE.DAL", "COM.ZUOMANE.DAL\COM.ZUOMANE.DAL.csproj", "{754EF61E-E405-4690-ACE2-6E05684D4E7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754EF61E-E405-4690-ACE2-6E05684D4E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754EF61E-E405-4690-ACE2-6E05684D4E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754EF61E-E405-4690-ACE2-6E05684D4E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754EF61E-E405-4690-ACE2-6E05684D4E7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
