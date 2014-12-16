@@ -12,7 +12,8 @@ namespace COM.ZUOMANE.Portal
 			routes.MapRoute(
 				name: "Default",
 				url: "{controller}/{action}/{id}",
-				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+				namespaces: new string[] { "COM.ZUOMANE.Portal.Controllers" } //默认命名空间
 			);
 		}
 	}
