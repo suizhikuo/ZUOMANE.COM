@@ -1246,6 +1246,7 @@
     <Content Include="Scripts\Plugins\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
     <Content Include="Scripts\Plugins\ckfinder\userfiles\.htaccess" />
     <Content Include="Views\Shared\_TopMenu.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
