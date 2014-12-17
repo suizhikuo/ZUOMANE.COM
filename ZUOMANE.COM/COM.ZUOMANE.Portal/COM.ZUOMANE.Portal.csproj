@@ -1191,6 +1191,7 @@
     <Content Include="Scripts\Plugins\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
     <Content Include="Scripts\Plugins\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
     <Content Include="Scripts\Plugins\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Scripts\Plugins\PluginsIni.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />

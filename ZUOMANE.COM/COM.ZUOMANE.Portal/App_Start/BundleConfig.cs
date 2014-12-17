@@ -47,6 +47,17 @@ namespace COM.ZUOMANE.Portal
 			bootstrapBundle.Transforms.Add(jsTransformer);
 			bootstrapBundle.Orderer = nullOrderer;
 			bundles.Add(bootstrapBundle);
+
+			var pluginsBundle = new ScriptBundle("~/bundles/plugins");
+			bootstrapBundle.Include(
+									"~/Scripts/Plugins/PluginsIni.js",
+									"~/Scripts/Plugins/My97DatePicker/WdatePicker.js",
+									"~/Scripts/Plugins/ckfinder/ckfinder.js",
+									"~/Scripts/Plugins/ckeditor/ckeditor.js"
+									);
+			bootstrapBundle.Transforms.Add(jsTransformer);
+			bootstrapBundle.Orderer = nullOrderer;
+			bundles.Add(pluginsBundle);
 		}
 	}
 }
