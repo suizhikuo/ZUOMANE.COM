@@ -358,6 +358,7 @@
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Scripts\Plugins\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
