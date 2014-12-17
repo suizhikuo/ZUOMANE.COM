@@ -310,6 +310,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="AppSettings.config" />
     <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_TopMenu.cshtml" />
     <None Include="BundleTransformer.Configuration.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -1240,6 +1241,7 @@
     <Content Include="Scripts\Plugins\ckeditor\skins\moono\readme.md" />
     <Content Include="Scripts\Plugins\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
     <Content Include="Scripts\Plugins\ckfinder\userfiles\.htaccess" />
+    <Content Include="Views\Shared\_TopMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
