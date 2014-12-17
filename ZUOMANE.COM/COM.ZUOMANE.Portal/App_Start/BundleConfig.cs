@@ -16,7 +16,11 @@ namespace COM.ZUOMANE.Portal
 			var nullOrderer = new NullOrderer();
 
 			var cssBundle = new StyleBundle("~/bundles/css");
-			cssBundle.Include("~/Content/Site.less", "~/Content/bootstrap/bootstrap.less");
+			cssBundle.Include(
+							"~/Content/Site.less",
+							"~/Content/bootstrap/bootstrap.less",
+							"~/Content/Common.less"
+							);
 			cssBundle.Transforms.Add(cssTransformer);
 			cssBundle.Orderer = nullOrderer;
 			bundles.Add(cssBundle);
