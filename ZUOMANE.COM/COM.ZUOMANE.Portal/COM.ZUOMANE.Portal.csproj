@@ -366,6 +366,24 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\COM.ZUOMANE.BLL\COM.ZUOMANE.BLL.csproj">
+      <Project>{0131622e-65ea-4d79-80a9-b98ff12030b5}</Project>
+      <Name>COM.ZUOMANE.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.ZUOMANE.Common\COM.ZUOMANE.Common.csproj">
+      <Project>{4844a187-6463-47c3-877c-9f3bc9a96388}</Project>
+      <Name>COM.ZUOMANE.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.ZUOMANE.Models\COM.ZUOMANE.Models.csproj">
+      <Project>{bab48412-ae9b-4281-97c0-377add5d9a38}</Project>
+      <Name>COM.ZUOMANE.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.ZUOMANE.ViewModels\COM.ZUOMANE.ViewModels.csproj">
+      <Project>{7e6c6231-dd8c-44e9-9012-39f890013f1a}</Project>
+      <Name>COM.ZUOMANE.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
