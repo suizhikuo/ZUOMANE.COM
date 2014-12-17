@@ -42,6 +42,16 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\COM.ZUOMANE.Common\COM.ZUOMANE.Common.csproj">
+      <Project>{4844a187-6463-47c3-877c-9f3bc9a96388}</Project>
+      <Name>COM.ZUOMANE.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.ZUOMANE.Models\COM.ZUOMANE.Models.csproj">
+      <Project>{bab48412-ae9b-4281-97c0-377add5d9a38}</Project>
+      <Name>COM.ZUOMANE.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
