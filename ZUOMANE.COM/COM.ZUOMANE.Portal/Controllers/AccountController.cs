@@ -53,7 +53,7 @@ namespace COM.ZUOMANE.Portal.Controllers
 				}
 				else
 				{
-					ModelState.AddModelError("", "Invalid username or password.");
+					ModelState.AddModelError("", "用户名或密码错误.");
 				}
 			}
 
@@ -119,10 +119,10 @@ namespace COM.ZUOMANE.Portal.Controllers
 		public ActionResult Manage(ManageMessageId? message)
 		{
 			ViewBag.StatusMessage =
-				message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
-				: message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
-				: message == ManageMessageId.RemoveLoginSuccess ? "The external login was removed."
-				: message == ManageMessageId.Error ? "An error has occurred."
+				message == ManageMessageId.ChangePasswordSuccess ? "密码修改成功."
+				: message == ManageMessageId.SetPasswordSuccess ? "密码设置成功."
+				: message == ManageMessageId.RemoveLoginSuccess ? "外部登陆已经移除."
+				: message == ManageMessageId.Error ? "出错了."
 				: "";
 			ViewBag.HasLocalPassword = HasPassword();
 			ViewBag.ReturnUrl = Url.Action("Manage");

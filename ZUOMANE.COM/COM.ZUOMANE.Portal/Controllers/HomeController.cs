@@ -19,14 +19,14 @@ namespace COM.ZUOMANE.Portal.Controllers
 
 		public ActionResult About()
 		{
-			ViewBag.Message = "Your application description page.";
+			ViewBag.Message = "关于我们";
 
 			return View();
 		}
 
 		public ActionResult Contact()
 		{
-			ViewBag.Message = "Your contact page.";
+			ViewBag.Message = "联系我们";
 
 			return View();
 		}
