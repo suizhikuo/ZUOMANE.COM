@@ -23,6 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{20
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{BA35E8A9-2377-47FF-BED1-C9AE53AA1EE4}"
 	ProjectSection(SolutionItems) = preProject
+		Lib\CKFinder.dll = Lib\CKFinder.dll
 		Lib\COM.Excel.dll = Lib\COM.Excel.dll
 		Lib\LTP.Accounts.dll = Lib\LTP.Accounts.dll
 		Lib\LtpPageControl.dll = Lib\LtpPageControl.dll
