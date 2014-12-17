@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COM.ZUOMANE.Portal.Filters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,9 @@ namespace COM.ZUOMANE.Portal.Controllers
 {
 	public class HomeController : Controller
 	{
+		[ResultFillter]
+		[ActionFillter]
+		[ExceptionFillter]
 		public ActionResult Index()
 		{
 			return View();
