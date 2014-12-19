@@ -1,0 +1,100 @@
+﻿@model COM.ZUOMANE.Models.ArticleCategory
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>ArticleCategory</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Description)
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SortNum)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SortNum)
+            @Html.ValidationMessageFor(model => model.SortNum)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsDelete)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IsDelete)
+            @Html.ValidationMessageFor(model => model.IsDelete)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RecordStatus)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RecordStatus)
+            @Html.ValidationMessageFor(model => model.RecordStatus)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreateUser)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreateUser)
+            @Html.ValidationMessageFor(model => model.CreateUser)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreateDatetime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreateDatetime)
+            @Html.ValidationMessageFor(model => model.CreateDatetime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastUpdateUser)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastUpdateUser)
+            @Html.ValidationMessageFor(model => model.LastUpdateUser)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastUpdateDatetime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastUpdateDatetime)
+            @Html.ValidationMessageFor(model => model.LastUpdateDatetime)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -217,6 +217,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ArticleCategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DefaultController.cs" />
+    <Compile Include="Areas\WebAPI\WebAPIAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\ActionFillter.cs" />
@@ -315,6 +318,13 @@
     <Content Include="AppSettings.config" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_TopMenu.cshtml" />
+    <Content Include="Areas\WebAPI\Views\web.config" />
+    <Content Include="Areas\Admin\Views\ArticleCategory\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ArticleCategory\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ArticleCategory\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ArticleCategory\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ArticleCategory\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <None Include="BundleTransformer.Configuration.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -1250,8 +1260,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Default\" />
+    <Folder Include="Areas\WebAPI\Controllers\" />
+    <Folder Include="Areas\WebAPI\Models\" />
+    <Folder Include="Areas\WebAPI\Views\Shared\" />
     <Folder Include="Scripts\Common\" />
   </ItemGroup>
   <ItemGroup>
