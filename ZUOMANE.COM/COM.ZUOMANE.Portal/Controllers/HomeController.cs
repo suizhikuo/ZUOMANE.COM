@@ -13,7 +13,7 @@ namespace COM.ZUOMANE.Portal.Controllers
 		[ActionFillter]
 		[ExceptionFillter]
 		public ActionResult Index()
-		{
+		{			
 			return View();
 		}
 

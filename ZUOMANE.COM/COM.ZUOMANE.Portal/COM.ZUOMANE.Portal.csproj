@@ -318,6 +318,7 @@
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="Resources\Demo\DropdownMenu.html" />
     <Content Include="Resources\Demo\说明.txt" />
+    <Content Include="Resources\error.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="AppSettings.config" />

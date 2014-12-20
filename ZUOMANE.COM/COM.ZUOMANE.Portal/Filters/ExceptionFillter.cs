@@ -12,8 +12,8 @@ namespace COM.ZUOMANE.Portal.Filters
 		public void OnException(ExceptionContext filterContext)
 		{
 			//在这里你可以记录发生异常时你要干什么，比例写日志
-			//这一行告诉系统，这个异常已经处理了，不用再处理
-			filterContext.ExceptionHandled = true;
+			//这一行告诉系统，这个异常还没有处理了，可以接着处理
+			filterContext.ExceptionHandled = false;
 		}
 	}
 }
