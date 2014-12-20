@@ -48,7 +48,7 @@ namespace COM.ZUOMANE.Portal.Areas.Admin.Controllers
 
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Create(ArticleCategory articlecategory)
+		public ActionResult Create([Bind(Include = "ID,Name,Description,SortNum,IsDelete,RecordStatus,CreateUser,CreateDatetime,LastUpdateUser,LastUpdateDatetime")] ArticleCategory articlecategory)
 		{
 			if (ModelState.IsValid)
 			{
@@ -78,7 +78,7 @@ namespace COM.ZUOMANE.Portal.Areas.Admin.Controllers
 
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Edit(ArticleCategory articlecategory)
+		public ActionResult Edit([Bind(Include = "ID,Name,Description,SortNum,IsDelete,RecordStatus,CreateUser,CreateDatetime,LastUpdateUser,LastUpdateDatetime")] ArticleCategory articlecategory)
 		{
 			if (ModelState.IsValid)
 			{
@@ -113,8 +113,11 @@ namespace COM.ZUOMANE.Portal.Areas.Admin.Controllers
 		}
 
 		protected override void Dispose(bool disposing)
-		{
-			articleCategoryBLL.Dispose();
+		{			
+			if (disposing)
+			{
+				articleCategoryBLL.Dispose();
+			}
 			base.Dispose(disposing);
 		}
 	}
