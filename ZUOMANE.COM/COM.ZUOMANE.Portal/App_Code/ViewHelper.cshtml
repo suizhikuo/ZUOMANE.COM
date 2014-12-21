@@ -1,4 +1,14 @@
-﻿@helper DisplayData(DateTime dataTimeToDisplay)
+﻿@*
+	总结：helper针对的是直接输出html内容并且具有简单的逻辑的情况，并且helper没有任何返回值，而functions自定义函数则要强大很多，如果functions需要返回html内容，那么返回值是IHtmlString类型，如果不需要返回值，则可以设置为void，但是如果没有返回值也就失去了定义function的意义，所以一般返回值均为IHtmlString。对于View层的重构，我们可以采用helper和自定义函数functions的方式来实现。
+*@
+
+
+@*
+	调用
+		@ViewHelper.DisplayRMB(123)
+*@
+
+@helper DisplayData(DateTime dataTimeToDisplay)
 {
 	<label>@dataTimeToDisplay.ToString("yyyy-MM-DD")</label>
 }
@@ -6,4 +16,24 @@
 @helper DisplayRMB(decimal money)
 {
 	<label>¥@money</label>
+}
+
+@*
+	自定义函数@functions
+	@ViewHelper.Get(0)   //调用的自定义函数
+*@
+@functions{
+	public static IHtmlString Get(int count)
+	{
+		string result = "";
+		if (count == 0)
+		{
+			result = "不存在";
+		}
+		else
+		{
+			result = "存在";
+		}
+		return new HtmlString(result);
+	}
 }
