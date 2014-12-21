@@ -62,6 +62,14 @@ namespace COM.ZUOMANE.Portal
 			bootstrapBundle.Transforms.Add(jsTransformer);
 			bootstrapBundle.Orderer = nullOrderer;
 			bundles.Add(pluginsBundle);
+
+			var commonJSBundle = new ScriptBundle("~/bundles/commonJS");
+			bootstrapBundle.Include(
+									"~/Scripts/Common/*.js"
+									);
+			bootstrapBundle.Transforms.Add(jsTransformer);
+			bootstrapBundle.Orderer = nullOrderer;
+			bundles.Add(commonJSBundle);
 		}
 	}
 }
