@@ -91,7 +91,7 @@ namespace COM.ZUOMANE.Portal
 			//处理完及时清理异常 
 			Server.ClearError();
 			//跳转至出错页面 
-			Response.Redirect("~/Resources/error.html");
+			Response.Redirect("~/Resources/404.html");
 		} 
 	}
 }
