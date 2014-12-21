@@ -234,6 +234,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\COM.ZUOMANE.Database.mdf" />
+    <Content Include="App_Data\COM.ZUOMANE.Database_log.ldf">
+      <DependentUpon>COM.ZUOMANE.Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\COM.ZUOMANE.Membership.mdf" />
+    <Content Include="App_Data\COM.ZUOMANE.Membership_log.ldf">
+      <DependentUpon>COM.ZUOMANE.Membership.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -1273,7 +1281,6 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Default\" />
     <Folder Include="Areas\WebAPI\Controllers\" />
