@@ -1,0 +1,9 @@
+﻿@helper DisplayData(DateTime dataTimeToDisplay)
+{
+	<label>@dataTimeToDisplay.ToString("yyyy-MM-DD")</label>
+}
+
+@helper DisplayRMB(decimal money)
+{
+	<label>¥@money</label>
+}

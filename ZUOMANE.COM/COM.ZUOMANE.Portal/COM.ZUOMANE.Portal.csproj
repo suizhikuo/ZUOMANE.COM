@@ -331,6 +331,7 @@
     <Content Include="Areas\Admin\Views\ArticleCategory\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\ArticleCategory\Index.cshtml" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="App_Code\ViewHelper.cshtml" />
     <None Include="BundleTransformer.Configuration.xsd">
       <SubType>Designer</SubType>
     </None>
