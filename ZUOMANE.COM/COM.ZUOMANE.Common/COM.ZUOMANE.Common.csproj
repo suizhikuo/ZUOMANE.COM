@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Assistant.cs" />
     <Compile Include="ConfigHelper.cs" />
+    <Compile Include="CookieHelper.cs" />
     <Compile Include="DataCache.cs" />
     <Compile Include="DEncrypt\DEncrypt.cs" />
     <Compile Include="DEncrypt\DESEncrypt.cs" />
