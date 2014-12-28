@@ -335,7 +335,7 @@
     <Content Include="Resources\404.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="AppSettings.config" />
+    <Content Include="Config\AppSettings.config" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_TopMenu.cshtml" />
     <Content Include="Areas\WebAPI\Views\web.config" />
@@ -356,6 +356,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Config\SmtpSetting.config" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\Common\CookieHelper.js" />
     <Content Include="Scripts\Common\ExtensionMethods.js" />

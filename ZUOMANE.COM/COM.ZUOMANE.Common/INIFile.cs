@@ -5,10 +5,10 @@ using System.IO;
 
 namespace COM.ZUOMANE.Common
 {
-    /// <summary>
-    /// INI文件读写类。
-    /// Copyright (C) Maticsoft
-    /// </summary>
+	/// <summary>
+	/// INI文件读写类。
+	/// Copyright (C) Maticsoft
+	/// </summary>
 	public class INIFile
 	{
 		public string path;
@@ -19,12 +19,12 @@ namespace COM.ZUOMANE.Common
 		}
 
 		[DllImport("kernel32")]
-		private static extern long WritePrivateProfileString(string section,string key,string val,string filePath);
+		private static extern long WritePrivateProfileString(string section, string key, string val, string filePath);
 
 		[DllImport("kernel32")]
-		private static extern int GetPrivateProfileString(string section,string key,string def, StringBuilder retVal,int size,string filePath);
+		private static extern int GetPrivateProfileString(string section, string key, string def, StringBuilder retVal, int size, string filePath);
 
-	
+
 		[DllImport("kernel32")]
 		private static extern int GetPrivateProfileString(string section, string key, string defVal, Byte[] retVal, int size, string filePath);
 
@@ -35,9 +35,9 @@ namespace COM.ZUOMANE.Common
 		/// <param name="Section"></param>
 		/// <param name="Key"></param>
 		/// <param name="Value"></param>
-		public void IniWriteValue(string Section,string Key,string Value)
+		public void IniWriteValue(string Section, string Key, string Value)
 		{
-			WritePrivateProfileString(Section,Key,Value,this.path);
+			WritePrivateProfileString(Section, Key, Value, this.path);
 		}
 
 		/// <summary>
@@ -46,10 +46,10 @@ namespace COM.ZUOMANE.Common
 		/// <param name="Section"></param>
 		/// <param name="Key"></param>
 		/// <returns></returns>
-		public string IniReadValue(string Section,string Key)
+		public string IniReadValue(string Section, string Key)
 		{
 			StringBuilder temp = new StringBuilder(255);
-			int i = GetPrivateProfileString(Section,Key,"",temp, 255, this.path);
+			int i = GetPrivateProfileString(Section, Key, "", temp, 255, this.path);
 			return temp.ToString();
 		}
 		public byte[] IniReadValues(string section, string key)
@@ -66,7 +66,7 @@ namespace COM.ZUOMANE.Common
 		/// </summary>
 		public void ClearAllSection()
 		{
-			IniWriteValue(null,null,null);
+			IniWriteValue(null, null, null);
 		}
 		/// <summary>
 		/// 删除ini文件下personal段落下的所有键
@@ -74,7 +74,7 @@ namespace COM.ZUOMANE.Common
 		/// <param name="Section"></param>
 		public void ClearSection(string Section)
 		{
-			IniWriteValue(Section,null,null);
+			IniWriteValue(Section, null, null);
 		}
 
 	}
