@@ -324,8 +324,6 @@
     <Content Include="Content\bootstrap\bootstrap.less" />
     <Content Include="Content\bootstrap\badges.less" />
     <Content Include="Content\bootstrap\alerts.less" />
-    <Content Include="Resources\Demo\DropdownMenu.html" />
-    <Content Include="Resources\Demo\说明.txt" />
     <Content Include="Resources\404Resources\404_search.png" />
     <Content Include="Resources\404Resources\bg_noise.jpg" />
     <Content Include="Resources\404Resources\cmstop-error.css" />
@@ -356,6 +354,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Config\SmtpSetting.config" />
+    <Content Include="Config\AppSettings.config" />
     <None Include="Properties\PublishProfiles\发布到zuomane.com的.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\Common\CookieHelper.js" />
